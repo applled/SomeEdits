@@ -246,8 +246,8 @@ class _afk_:
             [
                 InlineKeyboardButton(text="⚡️ STATUS", callback_data="status_afk"),
                 InlineKeyboardButton(
-                    text="🍏 TWAPPLE",
-                    url="https://t.me/twapple",
+                    text="Less.",
+                    url="https://t.me/LessContent",
                 ),
             ],
         ]
@@ -325,14 +325,14 @@ async def logs(message: Message) -> None:
 
 
 ANIMES = (
-    "Não desista, não há vergonha em cair! A verdadeira vergonha é não se levantar novamente.\nShintaro Midorima, Kuroko No Basket",
-    "Lembre-se da lição e não da decepção.\nHolo The Wise Wolf, Spice And Wolf",
-    "Você não conhece as pessoas, você conhece apenas o que elas permitem que você veja.\nBleach",
-    "Se você não gosta do seu destino, não o aceite. Em vez disso, tenha a coragem para transformá-lo naquilo que você quer que ele seja.\nNaruto Uzumaki, Naruto",
-    "O mundo não é perfeito. Mas ele está aqui para nós, fazendo o melhor que pode...e é isso que o faz tão lindo!\nRoy Mustang, Full Metal Alchemist",
-    "As pessoas fortes não derrubam as outras, elas ajudam-nas a se erguerem.\nGoku, Dragon Ball Z",
-    "Às vezes as questões são complicadas e as respostas são simples.\nDeath Note",
-    "Amar alguém profundamente lhe dá força; ser amado profundamente lhe dá coragem.\nYu Yu Hakusho",
+    "Posso ter saído ou simplesmente estou assistindo agora.",
+    "Não estou, não tá vendo?",
+    "Estou em algum lugar, menos aqui.",
+    "Não cansa?",
+    "Queria mesmo era chocolate, mas chocolate branco. Vai me dar?",
+    "AUTO REPLY fofo(a)!",
+    "Qual parte do AFK tu não entendeu?",
+    "NÃO ESTOU!",
 )
 
 ANIMTN = (
