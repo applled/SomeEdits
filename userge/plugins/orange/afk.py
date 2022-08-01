@@ -309,7 +309,7 @@ async def logs(message: Message) -> None:
     async def status_afk_(_, c_q: CallbackQuery):
         c_q.from_user.id
         await c_q.answer(
-            f"🍏 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n**Possíveis Motivos:**\n ╰• {REASON}\n",
+            f"🍏 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {MOTIVOS}\n\n𝐃𝐞𝐬𝐝𝐞: {afk_time_}",
             show_alert=True,
         )
         return status_afk_
@@ -324,7 +324,7 @@ async def logs(message: Message) -> None:
         return _status_afk
 
 
-ANIMES = (
+MOTIVOS = (
     "Curioso, né? Não estou,jovem.",
     "Posso estar trabalhando...",
     "Já bebeu água hoje? Vá beber do mesmo jeito. Não estou.",
@@ -341,6 +341,8 @@ ANIMES = (
     "No Spotify...",
     "Voltarei assim que possível.",
     "Deixe seu recado, peste.",
+    "Zzzz...?",
+    "Dê um tempo...",
 
 )
 
