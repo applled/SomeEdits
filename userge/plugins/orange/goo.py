@@ -33,9 +33,8 @@ async def goo_(message: Message):
                 ]
             ]
         ),
-    )
         f"""
-✅ **Este é o resultado da Sua Pesquisa no Google:**
+✅ **Your Google Search for:**
 🔗 [{query}]({r.json()['shorturl']})
   ➖➖➖➖
 Dev: @iamakima
