@@ -25,14 +25,6 @@ async def goo_(message: Message):
     payload = {"format": "json", "url": goo_url}
     r = requests.get("http://is.gd/create.php", params=payload)
     await message.edit(
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("+", callback_data="contato_pm"),
-                    InlineKeyboardButton("Seu resultado", url="https://t.me/twapple"),
-                ]
-            ]
-        ),
         f"""
 ✅ **Your Google Search for:**
 🔗 [{query}]({r.json()['shorturl']})
