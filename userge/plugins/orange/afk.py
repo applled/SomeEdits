@@ -242,10 +242,10 @@ class _afk_:
         return link_type, link
 
     def afk_buttons() -> InlineKeyboardMarkup:
-        buttons = [
+        buttons = [[
                 InlineKeyboardButton(text="⚡️ STATUS", callback_data="status_afk"),
                 InlineKeyboardButton(text="Less", url="https://t.me/LessContent",
-                InlineKeyboardButton(text="Twapple", url="https://t.me/Twapple",
+                InlineKeyboardButton(text="Twapple", url="https://t.me/Twapple"),
                 InlineKeyboardButton(text="+", url="https://t.me/biorange/40",
                ),
             ],
