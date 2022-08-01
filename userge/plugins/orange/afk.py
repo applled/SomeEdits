@@ -325,6 +325,9 @@ async def logs(message: Message) -> None:
 
 
 ANIMES = (
+    "Curioso, né? Não estou,jovem.",
+    "Posso estar trabalhando...",
+    "Já bebeu água hoje? Vá beber do mesmo jeito. Não estou.",
     "Posso ter saído ou simplesmente estou assistindo agora.",
     "Não estou, não tá vendo?",
     "Estou em algum lugar, menos aqui.",
@@ -336,6 +339,8 @@ ANIMES = (
     "Netflix!",
     "Disney+",
     "No Spotify...",
+    "Voltarei assim que possível.",
+    "Deixe seu recado, peste.",
 
 )
 
