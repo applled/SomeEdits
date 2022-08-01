@@ -122,6 +122,7 @@ class Config:
     BIO_APPLE = "t.me/biorange"
     TAG_LOGGING = False
     CHECK_MEDIA = os.environ.get("CHECK_MEDIA")
+    BIO_STT = "t.me/biorange/40"
 
 
 def get_version() -> str:
