@@ -243,16 +243,23 @@ class _afk_:
 
     def afk_buttons() -> InlineKeyboardMarkup:
         buttons = [
-            [
                 InlineKeyboardButton(text="⚡️ STATUS", callback_data="status_afk"),
-                InlineKeyboardButton(
-                    text="Less.",
-                    url="https://t.me/LessContent",
-                ),
+                InlineKeyboardButton(text="Less", url="https://t.me/LessContent",
+                InlineKeyboardButton(text="Twapple", url="https://t.me/Twapple",
+                InlineKeyboardButton(text="+", url="https://t.me/biorange/40",
+               ),
             ],
         ]
-        return InlineKeyboardMarkup(buttons)
-
+##            [
+#                InlineKeyboardButton(text="⚡️ STATUS", callback_data="status_afk"),
+#                InlineKeyboardButton(
+#                    text="Less.",
+#                    url="https://t.me/LessContent",
+#                ),
+#            ],
+#        ]
+#        return InlineKeyboardMarkup(buttons)
+##
 
 @userge.on_filters(IS_AFK_FILTER & filters.outgoing, group=-1, allow_via_bot=False)
 async def logs(message: Message) -> None:
@@ -309,7 +316,7 @@ async def logs(message: Message) -> None:
     async def status_afk_(_, c_q: CallbackQuery):
         c_q.from_user.id
         await c_q.answer(
-            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {MOTIVOS}\n\n𝐃𝐞𝐬𝐝𝐞: {afk_time}",
+            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {MOTIVOS}\n",
             show_alert=True,
         )
         return status_afk_
