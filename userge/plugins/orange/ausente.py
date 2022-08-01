@@ -29,7 +29,7 @@ STATUSM = (
     about={
         "header": "Modo Ausente já definido os status/medias",
         "flags": {
-            "-au": "Modo Ausente: Ligado...",
+            "-on": "Modo Ausente: Ligado...",
             "-fui": "Modo Ausente: Ligado...",
         },
         "como usar": "{tr}status -flag",
@@ -42,7 +42,7 @@ STATUSM = (
 async def escolhas_ausente(message: Message):
     """ Motivos para o Modo Ausente """
     await message.edit("`𝙴𝚗𝚝𝚎𝚗𝚍𝚒, 𝙼𝚎𝚜𝚝𝚛𝚎. 𝙰𝚐𝚞𝚊𝚛𝚍𝚎... 𝙼𝚘𝚍𝚘 𝙰𝚞𝚜𝚎𝚗𝚝𝚎 𝚙𝚛é-𝚍𝚎𝚏𝚒𝚗𝚒𝚍𝚘 𝚊𝚝𝚒𝚟𝚊𝚍𝚘 ✅`", log=__name__)
-    if "au" in message.flags:
+    if "on" in message.flags:
             await message.edit(
                 f"!afk {random.choice(STATUS)} | {random.choice(STATUSM)}",
                 del_in=1,
