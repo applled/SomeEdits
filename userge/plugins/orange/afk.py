@@ -325,14 +325,8 @@ async def logs(message: Message) -> None:
 
 
 ANIMES = (
-    "Posso ter saído ou simplesmente estou assistindo agora.",
-    "Não estou, não tá vendo?",
-    "Estou em algum lugar, menos aqui.",
-    "Não cansa?",
-    "Queria mesmo era chocolate, mas chocolate branco. Vai me dar?",
-    "AUTO REPLY fofo(a)!",
-    "Qual parte do AFK tu não entendeu?",
-    "NÃO ESTOU!",
+    f"{REASON}",
+
 )
 
 ANIMTN = (
