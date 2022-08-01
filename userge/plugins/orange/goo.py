@@ -3,7 +3,7 @@
 import requests
 
 from userge import Message, userge
-
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @userge.on_cmd(
     "goo",
@@ -25,6 +25,15 @@ async def goo_(message: Message):
     payload = {"format": "json", "url": goo_url}
     r = requests.get("http://is.gd/create.php", params=payload)
     await message.edit(
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("+", callback_data="contato_pm"),
+                    InlineKeyboardButton("Seu resultado", url="https://t.me/twapple"),
+                ]
+            ]
+        ),
+    )
         f"""
 ✅ **Este é o resultado da Sua Pesquisa no Google:**
 🔗 [{query}]({r.json()['shorturl']})
