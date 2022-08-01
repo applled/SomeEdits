@@ -25,7 +25,7 @@ pmCounter: Dict[int, int] = {}
 allowAllFilter = filters.create(lambda _, __, ___: Config.ALLOW_ALL_PMS)
 noPmMessage = bk_noPmMessage = (
     "✅ **AUTO REPLY - AntiSpam Protection System**\n"
-    "I do not allow personal messages {fname}!\n"
+    "I do not allow personal messages, **{fname}**!\n"
     "Tag me in groups first if you want to text me. I'll not reply and you could be automatic blocked.\n"
     "🔐 — <code>All messages here was forwarded to a private log server</code>"
 )
