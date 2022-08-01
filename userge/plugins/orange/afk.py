@@ -244,7 +244,7 @@ class _afk_:
     def afk_buttons() -> InlineKeyboardMarkup:
         buttons = [
            [InlineKeyboardButton(text="⚡️ STATUS", callback_data="status_afk"),
-            InlineKeyboardButton(text="Less.",url="https://t.me/LessContent",),
+            InlineKeyboardButton(text="Less.", url="https://t.me/LessContent",)
             InlineKeyboardButton(text="自分でいよう。", url=Config.BIO_STT),
             ],
         ]
