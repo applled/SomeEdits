@@ -325,7 +325,8 @@ async def logs(message: Message) -> None:
 
 
 ANIMES = (
-    f"{REASON}",
+    f"""{REASON}""",
+    f"""{REASON}""",
 
 )
 
