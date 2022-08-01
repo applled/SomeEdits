@@ -19,7 +19,9 @@ STATUS = (
 
 # Ações - Media dos Motivos 
 STATUSM = (
-        "https://telegra.ph/file/2b4e417b73b1be05518c7.gif", #Criar novos layouts
+    "https://telegra.ph/file/7447f3085c90844fba4a2.gif",
+    "https://telegra.ph/file/7447f3085c90844fba4a2.gif",
+    "https://telegra.ph/file/7447f3085c90844fba4a2.gif",
 )
 
 @userge.on_cmd(
@@ -28,14 +30,7 @@ STATUSM = (
         "header": "Modo Ausente já definido os status/medias",
         "flags": {
             "-au": "Modo Ausente: Ligado...",
-            "-a": "Assistindo...",
-            "-d": "Dormindo...",
-            "-o": "Ocupado....",
-            "-n": "Netflix...",
-            "-s": "Spotify...",
-            "-w": "Working...",
-            "-p": "Working...",
-            "-dd": "Disney+...",
+            "-fui": "Modo Ausente: Ligado...",
         },
         "como usar": "{tr}status -flag",
         "exemplo": "{tr}status-au",
@@ -52,63 +47,8 @@ async def escolhas_ausente(message: Message):
                 f"!afk {random.choice(STATUS)} | {random.choice(STATUSM)}",
                 del_in=1,
             )
-    if "an" in message.flags:
+    if "fui" in message.flags:
             await message.edit(
-                f"!afk {random.choice(ANIMU)} | {random.choice(ANIMUM)}",
+                f"!afk {random.choice(STATUS)} | {random.choice(STATUSM)}",
                 del_in=1,
             )
-    if "d" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(DORMINDO)} | {random.choice(DORMINDOM)}",
-                del_in=1,
-            )
-    if "o" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(OCUPADO)} | {random.choice(OCUPADOM)}",
-                del_in=1
-            )
-    if "n" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(NETFLIX)} | {random.choice(NETFLIXM)}",
-                del_in=1
-            )
-    if "s" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(SPOTIFY)} | {random.choice(SPOTIFYM)}",
-                del_in=1
-            )
-    if "w" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(WORKING)} | {random.choice(WORKINGM)}",
-                del_in=1
-            )
-    if "p" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(PURPLE)} | {random.choice(PURP)}",
-                del_in=1
-            )
-    if "dd" in message.flags:
-            await message.edit(
-                f"!afk {random.choice(DISNEYPLUS)} | {random.choice(DISNEYPLUSM)}",
-                del_in=1
-            )
-
-@userge.on_cmd(
-    "bye",
-    about={
-        "titulo": "Gone!",
-        "como usar": "{tr}bye",
-        "exemplo": "{tr}bye",
-    },
-    del_pre=True,
-    allow_channels=False,
-)
-
-async def gone(message: Message):
-    gif = f"""{random.choice(GIFF)}"""
-    mensagem = f"<i>I'v to go, bye!</i> :3"
-    await message.client.send_animation(
-                         message.chat.id, 
-                         animation=gif, 
-                         caption=mensagem,
-    )  
