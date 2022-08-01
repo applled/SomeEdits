@@ -245,7 +245,7 @@ class _afk_:
         buttons = [
            [InlineKeyboardButton(text="⚡️ STATUS", callback_data="status_afk"),
             InlineKeyboardButton(text="Less.", url="https://t.me/LessContent",)
-           [InlineKeyboardButton(text="自分でいよう。", url=Config.BIO_STT),)
+           [InlineKeyboardButton(text="自分でいよう。", url="https://t.me/biorange/40",)
             ],
         ]
         return InlineKeyboardMarkup(buttons)
