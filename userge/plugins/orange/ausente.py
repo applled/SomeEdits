@@ -19,9 +19,9 @@ STATUS = (
 
 # Ações - Media dos Motivos 
 STATUSM = (
-    "https://telegra.ph/file/7447f3085c90844fba4a2.gif",
-    "https://telegra.ph/file/7447f3085c90844fba4a2.gif",
-    "https://telegra.ph/file/7447f3085c90844fba4a2.gif",
+    "https://telegra.ph/file/6ca775f686db817235437.gif",
+    "https://telegra.ph/file/6ca775f686db817235437.gif",
+    "https://telegra.ph/file/6ca775f686db817235437.gif",
 )
 
 @userge.on_cmd(
