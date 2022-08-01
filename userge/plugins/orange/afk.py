@@ -250,11 +250,10 @@ class _afk_:
                    url="https://t.me/LessContent",
                 ),
                [
-                InlineKeyboardButton(
-                    text="自分でいよう。", url="https://t.me/biorange/40"
+                InlineKeyboardButton(text="自分でいよう。", url="https://t.me/biorange/40"
                 ),
             ],
-        ]
+        ]]
         return InlineKeyboardMarkup(buttons)
 ##
 
