@@ -26,9 +26,10 @@ async def goo_(message: Message):
     r = requests.get("http://is.gd/create.php", params=payload)
     await message.edit(
         f"""
-✅ **Your Google Search for:**
+✅ Your **Google** search results:
 🔗 [{query}]({r.json()['shorturl']})
   ➖➖➖➖
-Dev: @iamakima
+Dev: @iamakima / @twapple
 """
+        disable_web_page_preview=True,
     )
