@@ -29,5 +29,4 @@ async def rbg_(message: Message):
   ➖➖➖➖
 Dev: @iamakima / @twapple
 """
-        disable_web_page_preview=True,
     )
