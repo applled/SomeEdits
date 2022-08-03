@@ -9,6 +9,11 @@ from re import compile as comp_regex
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
+from userge import Config, Message, get_collection, pool, userge
+from userge.utils import check_owner, get_file_id
+
+from .bot_forwards import ban_from_bot_pm
+
 from userge import Config, Message, filters, get_collection, userge
 from userge.plugins.utils.afk_inline import (
     _send_inline_afk_,
