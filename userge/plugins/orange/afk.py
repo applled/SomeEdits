@@ -304,7 +304,7 @@ async def logs(message: Message) -> None:
     async def status_afk_(_, c_q: CallbackQuery):
         c_q.from_user.id
         await c_q.answer(
-            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {random.choice(MOTIVOS)}\n\n🔗 𝐁𝐢𝐨: @biorange",
+            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬, {from_user.flname}:\n ╰• {random.choice(MOTIVOS)}\n\n🔗 𝐁𝐢𝐨: @biorange",
             show_alert=True,
         )
         return status_afk_
