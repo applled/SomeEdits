@@ -243,11 +243,9 @@ class _afk_:
 
     def afk_buttons() -> InlineKeyboardMarkup:
         buttons = [
-           [InlineKeyboardButton(text="✅ STATUS", callback_data="status_afk"),
-            InlineKeyboardButton(text="⭕️ LESS.", url="https://t.me/LessContent",)
-            InlineKeyboardButton(text="👾", url="https://t.me/LessContent"),
-            ],
-        ]
+[InlineKeyboardButton(text="✅ STATUS", callback_data="status_afk"),],
+             [InlineKeyboardButton(text="⭕️ LESS.", url="https://t.me/LessContent"),
+             InlineKeyboardButton(text="👾", url=Config.BIO_STT),],]
         return InlineKeyboardMarkup(buttons)
 
 @userge.on_filters(IS_AFK_FILTER & filters.outgoing, group=-1, allow_via_bot=False)
