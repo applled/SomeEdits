@@ -325,7 +325,7 @@ MOTIVOS = (
     "Meu celular descarregou. Será?",
     "Paciência, volto logo.",
     "Você pode usar o Google, sabia disso?",
-    "Ainda não sei o que tu quer, mas tentou pesquisar?".
+    "Ainda não sei o que tu quer, mas tentou pesquisar?",
     "Cliclou aqui, quanta curiosidade...",
     "Esse Less. é o meu blog pessoal no TG ;)",
     "Leia minha bio em @biorange.",
