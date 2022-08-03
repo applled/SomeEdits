@@ -9,11 +9,6 @@ from re import compile as comp_regex
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
-from userge import Config, Message, get_collection, pool, userge
-from userge.utils import check_owner, get_file_id
-
-from .bot_forwards import ban_from_bot_pm
-
 from userge import Config, Message, filters, get_collection, userge
 from userge.plugins.utils.afk_inline import (
     _send_inline_afk_,
@@ -309,7 +304,7 @@ async def logs(message: Message) -> None:
     async def status_afk_(_, c_q: CallbackQuery):
         c_q.from_user.id
         await c_q.answer(
-            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬, {from_user.flname}:\n ╰• {random.choice(MOTIVOS)}\n\n🔗 𝐁𝐢𝐨: @biorange",
+            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {random.choice(MOTIVOS)}\n\n🔗 𝐁𝐢𝐨: @biorange",
             show_alert=True,
         )
         return status_afk_
