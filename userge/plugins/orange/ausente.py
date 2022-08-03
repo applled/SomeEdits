@@ -20,7 +20,7 @@ STATUS = (
 # Ações - Media dos Motivos 
 STATUSM = (
     "https://telegra.ph/file/6ca775f686db817235437.gif",
-    "https://telegra.ph/file/6ca775f686db817235437.gif",
+    "https://telegra.ph/file/1ae2b317b1ced5e16c47f.gif",
     "https://telegra.ph/file/6ca775f686db817235437.gif",
 )
 
@@ -33,7 +33,7 @@ STATUSM = (
             "-fui": "Modo Ausente: Ligado...",
         },
         "como usar": "{tr}status -flag",
-        "exemplo": "{tr}status-au",
+        "exemplo": "{tr}status-on",
     },
     del_pre=True,
     allow_channels=False,
