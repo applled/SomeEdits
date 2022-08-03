@@ -304,7 +304,7 @@ async def logs(message: Message) -> None:
     async def status_afk_(_, c_q: CallbackQuery):
         c_q.from_user.id
         await c_q.answer(
-            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {random.choice(MOTIVOS)}\n",
+            f"👾 @iamakima 𝐒𝐓𝐀𝐓𝐔𝐒:\n\n𝐏𝐨𝐬𝐬í𝐯𝐞𝐢𝐬 𝐌𝐨𝐭𝐢𝐯𝐨𝐬:\n ╰• {random.choice(MOTIVOS)}\n\n🔗 𝐁𝐢𝐨: @biorange",
             show_alert=True,
         )
         return status_afk_
@@ -313,14 +313,24 @@ async def logs(message: Message) -> None:
     async def _status_afk(_, c_q: CallbackQuery):
         c_q.from_user.id
         await c_q.answer(
-            f"🍎 @applled 𝐁𝐈𝐎/Projects:\nТак вам любопытно\n\nHi, human!\n{random.choice(BIO_AFK)}\n",
+            f"🍎 @applled 𝐁𝐈𝐎/Projects:\nТак вам любопытно\n\nHi, human!\n{random.choice(BIO_AFK)}\n\n🔗 𝐁𝐢𝐨: @biorange",
             show_alert=True,
         )
         return _status_afk
 
 
 MOTIVOS = (
-    "Curioso, né? Não estou,jovem.",
+    "Curioso, né? Não estou, jovem.",
+    "Te respondo assim que eu ficar onlime, combinado?",
+    "Meu celular descarregou. Será?",
+    "Paciência, volto logo.",
+    "Você pode usar o Google, sabia disso?",
+    "Ainda não sei o que tu quer, mas tentou pesquisar?".
+    "Cliclou aqui, quanta curiosidade...",
+    "Esse Less. é o meu blog pessoal no TG ;)",
+    "Leia minha bio em @biorange.",
+    "Zzzz...",
+    "Sem motivo, eu só quis sumir.",
     "Posso estar trabalhando...",
     "Já bebeu água hoje? Vá beber do mesmo jeito. Não estou.",
     "Posso ter saído ou simplesmente estou assistindo agora.",
@@ -341,21 +351,7 @@ MOTIVOS = (
 
 )
 
-ANIMTN = (
-    "https://telegra.ph/file/7465c70c1cb0f35cc536e.gif",
-    "https://telegra.ph/file/b2fda41d76cd798d4c368.gif",
-    "https://telegra.ph/file/43901682e8a936d76572e.gif",
-    "https://telegra.ph/file/140d286c155894093c250.gif",
-    "https://telegra.ph/file/ebfb744d7a25736ef09f5.gif",
-)
-
-FRASE_AFK = (
-    "Se você perdeu a batalha,\nimagna a guerra que tem mais pessoas!",
-    "As moscas não se arriscariam\nà ir a Roma de boca fechada,\npois morreriam de fome.",
-    "Fazer alguém, sem olhar o bem que tem.",
-    "Quem ri por último come mais chocolate.",
-)
 BIO_AFK = (
-    "𝐂𝐇𝐄𝐂𝐊 𝐓𝐇𝐈𝐒:\n\n𝐋𝐢𝐤𝐞 𝐓𝐰𝐞𝐞𝐭𝐬\n🔗 @twapple\n𝐁𝐢𝐨\n🔗 @orapple\n ╰• 𝘔𝘰𝘳𝘦 𝘤𝘰𝘮𝘪𝘯𝘨 𝘴𝘰𝘰𝘯...",
+    "𝐂𝐇𝐄𝐂𝐊 𝐓𝐇𝐈𝐒:\n\n𝐋𝐢𝐤𝐞 𝐓𝐰𝐞𝐞𝐭𝐬\n🔗 -- \n𝐁𝐢𝐨\n🔗 -- \n ╰• 𝘔𝘰𝘳𝘦 𝘤𝘰𝘮𝘪𝘯𝘨 𝘴𝘰𝘰𝘯...",
 )
 AFK_REASONS = ("𝙸 𝚌𝚊𝚗'𝚝 𝚝𝚊𝚕𝚔 𝚛𝚒𝚐𝚑𝚝 𝚗𝚘𝚠.",)
