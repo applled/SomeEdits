@@ -52,7 +52,7 @@ _checkDefaultVars() {
         [DOWN_PATH]="downloads"
         [UPSTREAM_REMOTE]="upstream"
         [UPSTREAM_REPO]="https://github.com/applled/AppleBot"
-        [LOAD_UNOFFICIAL_PLUGINS]=true
+        [LOAD_UNOFFICIAL_PLUGINS]=false
         [CUSTOM_PLUGINS_REPO]=""
         [G_DRIVE_IS_TD]=true
         [CMD_TRIGGER]="."
@@ -151,7 +151,7 @@ _setupPlugins() {
 }
 
 _checkUnoffPlugins() {
-    _setupPlugins Xtra true $LOAD_UNOFFICIAL_PLUGINS https://github.com/applled/extras.git
+    _setupPlugins Xtra false $LOAD_UNOFFICIAL_PLUGINS https://github.com/applled/extras.git
 }
 
 _checkCustomPlugins() {
