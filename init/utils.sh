@@ -31,7 +31,7 @@ log() {
 }
 
 quit() {
-    local err="\t:: DESGRAÇA :: $1\nEncerrando com SIGTERM (143) ..."
+    local err="\t:: Alguma configuração está incorreta, confira o log e suas variáveis :: $1\nEste processo foi encerrado (SIGTERM) (143) ..."
     if (( getMessageCount )); then
         replyLastMessage "$err"
     else
